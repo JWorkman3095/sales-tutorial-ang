@@ -1,0 +1,33 @@
+<app-menu></app-menu>
+<div>
+    <span id="pageTitle">Order Detail</span>
+</div>
+<table *ngIf="order" class="table table-sm">
+    <tr>
+        <th>Id:</th>
+        <td><input [(ngModel)]="order.id" type="number" disabled></td>       
+    </tr>
+    <tr>
+        <th>Desription:</th>
+        <td><input [(ngModel)]="order.description" type="text" disabled></td>       
+    </tr>
+    <tr>
+        <th>Shipped:</th>
+        <td><input [(ngModel)]="order.shipped" type="text" disabled></td>       
+    </tr>
+    <tr>
+        <th>Total:</th>
+        <td><input [(ngModel)]="order.total" type="currency" disabled></td>       
+    </tr>
+    <tr>
+        <th>Customer:</th>
+        <td><input [(ngModel)]="order.customer.name" type="text" disabled></td>       
+    </tr>
+</table>
+<div>
+    <button (click)="remove()" class="btn btn-danger">Delete</button>
+    <span *ngIf="showVerifyButton">
+        | <button (click)="verifyRemove()" class="btn btn-danger">Verify Delete</button>
+    </span>
+
+</div>

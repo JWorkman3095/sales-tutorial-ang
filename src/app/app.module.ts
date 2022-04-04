@@ -17,6 +17,10 @@ import { OrderlineListComponent } from './sales/orderline/orderline-list/orderli
 import { OrderlineDetailComponent } from './sales/orderline/orderline-detail/orderline-detail.component';
 import { OrderlineCreateComponent } from './sales/orderline/orderline-create/orderline-create.component';
 import { OrderlineEditComponent } from './sales/orderline/orderline-edit/orderline-edit.component';
+import { OrderListComponent } from './sales/order/order-list/order-list.component';
+import { OrderDetailComponent } from './sales/order/order-detail/order-detail.component';
+import { OrderCreateComponent } from './sales/order/order-create/order-create.component';
+import { OrderEditComponent } from './sales/order/order-edit/order-edit.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +36,11 @@ import { OrderlineEditComponent } from './sales/orderline/orderline-edit/orderli
     OrderlineListComponent,
     OrderlineDetailComponent,
     OrderlineCreateComponent,
-    OrderlineEditComponent
+    OrderlineEditComponent,
+    OrderListComponent,
+    OrderDetailComponent,
+    OrderCreateComponent,
+    OrderEditComponent
   ],
   imports: [
     BrowserModule, FormsModule, HttpClientModule,

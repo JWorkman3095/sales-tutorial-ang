@@ -18,7 +18,7 @@ export class CustomerEditComponent implements OnInit {
   ) { }
 
   save(): void {
-    this.custsvc.change(this.customer).subscribe({
+    this.custsvc.change(this.customer).subscribe({ //subscribe (alert me)
       next: (res) => {
         console.debug("Customer Updated");
         this.router.navigateByUrl("/customer/list");

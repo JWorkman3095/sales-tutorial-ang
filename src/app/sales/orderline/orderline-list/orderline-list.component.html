@@ -1,0 +1,23 @@
+<app-menu></app-menu>
+<p>Orderline List works!</p>
+<table class="table table-s">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Product</th>
+            <th>Quantity</th>
+            <th>Price</th>
+            <th>OrderId</th>
+            <th>Order</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let o of orderlines">
+                <td>{{o.id}}</td>
+                <td>{{o.product}}</td>
+                <td>{{o.quantity}}</td>
+                <td>{{o.price | currency}}</td>
+                <td>{{o.orderId}}</td>
+        </tr>
+    </tbody>
+</table>

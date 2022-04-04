@@ -7,6 +7,10 @@ import { CustomerCreateComponent } from './sales/customer/customer-create/custom
 import { CustomerDetailComponent } from './sales/customer/customer-detail/customer-detail.component';
 import { CustomerEditComponent } from './sales/customer/customer-edit/customer-edit.component';
 import { CustomerListComponent } from './sales/customer/customer-list/customer-list.component';
+import { OrderlineCreateComponent } from './sales/orderline/orderline-create/orderline-create.component';
+import { OrderlineDetailComponent } from './sales/orderline/orderline-detail/orderline-detail.component';
+import { OrderlineEditComponent } from './sales/orderline/orderline-edit/orderline-edit.component';
+import { OrderlineListComponent } from './sales/orderline/orderline-list/orderline-list.component';
 
 const routes: Routes = [
   {path: "", redirectTo: "/home", pathMatch: "full"},
@@ -15,9 +19,14 @@ const routes: Routes = [
 
   {path: "customer/list", component: CustomerListComponent},
   {path: "customer/create", component: CustomerCreateComponent},
-  {path: "customer/detal/:id", component: CustomerDetailComponent },
+  {path: "customer/detail/:id", component: CustomerDetailComponent },
   {path: "customer/edit/:id", component: CustomerEditComponent },
   
+  {path: "orderline/list", component: OrderlineListComponent },
+  {path: "orderline/create", component: OrderlineCreateComponent},
+  {path: "orderline/detal/:id", component: OrderlineDetailComponent },
+  {path: "orderline/edit/:id", component: OrderlineEditComponent },
+
   
 
   {path: "**", component: E404Component}

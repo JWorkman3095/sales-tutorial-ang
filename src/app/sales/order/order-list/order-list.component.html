@@ -19,7 +19,7 @@
         <tr *ngFor="let or of orders">
                 <td>{{or.id}}</td>
                 <td>{{or.description}}</td>
-                <td>{{(or.shipped ? "Yes" : "No") }}</td>
+                <td>{{(or.shipped | boolDisplay) }}</td>
                 <td>{{or.total | currency}}</td>
                 <td>{{or.customerId}}</td>
                 <td>{{or.customer.name}}</td>

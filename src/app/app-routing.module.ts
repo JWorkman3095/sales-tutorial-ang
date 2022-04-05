@@ -33,7 +33,7 @@ const routes: Routes = [
   
   {path: "orderline/list", component: OrderlineListComponent },
   {path: "orderline/create", component: OrderlineCreateComponent},
-  {path: "orderline/detal/:id", component: OrderlineDetailComponent },
+  {path: "orderline/detail/:id", component: OrderlineDetailComponent },
   {path: "orderline/edit/:id", component: OrderlineEditComponent },
   
 

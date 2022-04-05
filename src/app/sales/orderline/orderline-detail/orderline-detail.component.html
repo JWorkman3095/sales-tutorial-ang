@@ -1,2 +1,33 @@
 <app-menu></app-menu>
-<p>Orderline Detail works!</p>
+<div>
+    <span id="pageTitle">Orderline Detail</span>
+</div>
+<table *ngIf="orderline" class="table table-sm">
+    <tr>
+        <th>Id:</th>
+        <td><input [(ngModel)]="orderline.id" type="number" disabled></td>       
+    </tr>
+    <tr>
+        <th>Product:</th>
+        <td><input [(ngModel)]="orderline.product" type="text" disabled></td>       
+    </tr>
+    <tr>
+        <th>Quantity:</th>
+        <td><input [(ngModel)]="orderline.quantity" type="text" disabled></td>       
+    </tr>
+    <tr>
+        <th>Price:</th>
+        <td><input [(ngModel)]="orderline.price" type="currency" disabled></td>       
+    </tr>
+    <tr>
+        <th>OrderId:</th>
+        <td><input [(ngModel)]="orderline.order.id" type="text" disabled></td>       
+    </tr>
+</table>
+<div>
+    <button (click)="remove()" class="btn btn-danger">Delete</button>
+    <span *ngIf="showVerifyButton">
+        | <button (click)="verifyRemove()" class="btn btn-danger">Verify Delete</button>
+    </span>
+
+</div>

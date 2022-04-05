@@ -1,2 +1,36 @@
 <app-menu></app-menu>
-<p>Orderline Create works!</p>
+<div>
+    <span id="pageTitle">Orderline Create</span>
+</div>
+<table class="table table-striped table-sm">
+    <tbody>
+        <tr>
+            <th>Id</th>
+            <td><input [(ngModel)]="orderline.id" type="number" disabled></td>
+        </tr>
+        <tr>
+            <th>Product</th>
+            <td><input [(ngModel)]="orderline.product" type="text" ></td>
+        </tr>
+        <tr>
+            <th>Quantity</th>
+            <td><input [(ngModel)]="orderline.quantity" type="number" ></td>
+        </tr>
+        <tr>
+            <th>Price</th>
+            <td><input [(ngModel)]="orderline.price" type="number" ></td>
+        </tr>
+        <tr>
+            <th>OrderId</th>
+            <td><input [(ngModel)]="orderline.orderId" type="number" ></td>
+        </tr>
+        <tr>
+            <th>Order</th>
+            <td><input [(ngModel)]="orderline.order" type="number" ></td>
+        </tr>
+        <tr>
+    </tbody>
+</table>
+<div>
+    <button (click)="save()" class="btn btn-primary">save</button>
+</div>

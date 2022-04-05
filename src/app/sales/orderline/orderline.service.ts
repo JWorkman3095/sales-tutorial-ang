@@ -8,7 +8,7 @@ import { Orderline } from './orderline.class';
 })
 export class OrderlineService {
 
-baseUrl: string = "http://localhost:56592/api/customers";
+baseUrl: string = "http://localhost:56592/api/orderlines";
   
   constructor(
     private http: HttpClient

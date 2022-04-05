@@ -10,7 +10,6 @@ import { OrderlineService } from '../orderline.service';
 export class OrderlineListComponent implements OnInit {
 
   orderlines: Orderline[] = [];
-
   constructor(
     private olsvc: OrderlineService
   ) { }
